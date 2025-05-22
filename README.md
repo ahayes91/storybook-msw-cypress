@@ -1,5 +1,10 @@
 <h1>Repro for Storybook + MSW + Cypress Component Tests</h1>
 
+<p>Related issue: <a href="https://github.com/mswjs/msw-storybook-addon/issues/173">https://github.com/mswjs/msw-storybook-addon/issues/173</a></p>
+
+<p><code>main</code> branch of this repo uses Storybook 8 and React 18</p>
+<p><code>with-latest-deps</code> branch of this repo uses later dependencies</p>
+
 <h2>Testing instructions</h2>
 
 <p>Install dependencies:</p>
