@@ -1,0 +1,8 @@
+ARG CYPRESS_VERSION
+
+FROM cypress/included:$CYPRESS_VERSION
+
+COPY . .
+
+RUN yarn install --frozen-lockfile
+

@@ -1,7 +1,11 @@
 services:
   cypress:
     container_name: docker_cypress
-    image: cypress/included:$CYPRESS_VERSION
+    build:
+      context: .
+      dockerfile: ./Dockerfile.cypress
+      args:
+        - CYPRESS_VERSION=${CYPRESS_VERSION}
     volumes:
       - ./:/cypress
     working_dir: /cypress
