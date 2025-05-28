@@ -1,0 +1,14 @@
+services:
+  cypress:
+    container_name: docker_cypress
+    image: cypress/included:$CYPRESS_VERSION
+    volumes:
+      - ./:/cypress
+    working_dir: /cypress
+    environment:
+      - CYPRESS_INSTALL_BINARY=0
+      - CYPRESS_VERSION=${CYPRESS_VERSION}
+    entrypoint:
+      - cypress
+    command: >
+      run --component --browser=chrome

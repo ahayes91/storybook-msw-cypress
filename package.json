@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "cy:open": "cypress open",
+    "cy:docker": "./scripts/runDocker.sh",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
