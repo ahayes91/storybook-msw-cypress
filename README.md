@@ -26,3 +26,7 @@
 <p>See <pre>src/stories/AppUsingRunMethod.cy.tsx</pre> will fail, DOM shows the app appearing twice.</p>
 
 <img src="./docs/static/test_fails.png" />
+
+<p>See <pre>src/stories/AppUsingMountOnly.cy.tsx</pre> will fail, because the mock from the stories file isn't being applied.</p>
+
+<img src="./docs/static/no_handlers.png" />
